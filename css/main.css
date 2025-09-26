@@ -1,3 +1,17 @@
+:root{
+    --islamic-green: #04B90B;
+    --slate-grey: #777E90;
+    
+    --over-font-size: 62.5%;
+}
+
+
+html{
+    font-size: var(--over-font-size); /** IMPORTANTE GUARDAR PARA TODO PROYECTO */
+}
+
+
+
 html, 
 body {
     height: 100%;
