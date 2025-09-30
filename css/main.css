@@ -110,6 +110,12 @@ main {
 
 /* footer*/
  
+
+.menu-footer{
+    display: flex;
+    justify-content: space-between;
+}
+
 .widget {
    margin: 4rem 0;
     }
@@ -118,8 +124,9 @@ main {
     }
 
 details {
-  border: 1px solid #aaaaaa;
   border-radius: 4px;
+  border: 1px solid #aaaaaa;
+  flex: 1;
   padding: 0.5em 0.5em 0;
 }
 
