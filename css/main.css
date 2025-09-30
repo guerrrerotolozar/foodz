@@ -1,12 +1,14 @@
+@import url('https://fonts.googleapis.com/css2?family=Alice&display=swap');
+
 :root{
-    --chinese-black:#141416;
+    --charleston-green:#23262F;
     --slate-grey: #777e90;
     --cadet-blue:#b1b5c3;
     --bright-gray:#e6e8ec;
     --cultured:#f5f6fa;
     --lotion: #fcfcfd;
 
-    --islamic-green:-#04b90b;
+    --islamic-green:#04b90b;
     --aero-blue:#d3f9d5;
     --light-coral:#ea8484;
     --lavender-blush:#fcf1f1;
@@ -30,20 +32,29 @@ html{
     font-size: var(--over-font-size); /** IMPORTANTE GUARDAR PARA TODO PROYECTO */
 }
 
-
-
 html, 
 body {
     height: 100%;
     margin: 0;    
 }
+
+
 body {
     display: flex;
     flex-direction: column;
+    font-size: 1.6rem;
+    font-family: "Alice", serif;
 }
+
+h1,h2 {
+    color: var(--charleston-green);
+    font-size: 3.2rem;
+}
+
 h1 span {
-    color: #04B90B;
+    color: var(--islamic-green);
 }
+
 .header {
     border: 1px dotted blue;
 }
@@ -74,19 +85,59 @@ h1 span {
     color: #777E90;
     text-decoration: none;
 }
+
+.active {
+    color: var(--islamic-green);
+}
+
 .btn {
-    padding: .6rem .9rem;
+    padding: .6rem .6rem;
     border-radius: .5rem .5rem 2rem .5rem;
 }
 .btn--light-green {
     background-color: #04B90B;
     color: #FFFFFF;
     text-transform: uppercase;
+}
+
+.hamburger-menu {
+    display: flex;
+}
+
 main {
     flex-grow: 1;
 }
 
+/* footer*/
+ 
+.widget {
+   margin: 4rem 0;
+    }
+.widget-left{
+    text-align: center;
+    }
+
+details {
+  border: 1px solid #aaaaaa;
+  border-radius: 4px;
+  padding: 0.5em 0.5em 0;
 }
+
+summary {
+  font-weight: bold;
+  margin: -0.5em -0.5em 0;
+  padding: 0.5em;
+}
+
+details[open] {
+  padding: 0.5em;
+}
+
+details[open] summary {
+  border-bottom: 1px solid #aaaaaa;
+  margin-bottom: 0.5em;
+}
+
 @media (width > 568px) {
 .container {
         max-width: 54rem;
@@ -108,6 +159,23 @@ main {
         max-width: 72rem;
         padding: 0 2.4rem;
     }
+
+    .footer-container{
+    display: flex;
+    gap: 5rem;
+    }
+
+    .widget-left{
+        flex-basis:40%;
+    }
+
+    .widget-right {
+        /*flex-grow:1; */
+        /*flex-shrink:0; */
+        /*flex-basis: 60%; */     
+    flex: 1 0 auto;  /* <FLEX-GROW> <FLEX-sHRINK> <FLEX-BASIS>  (ABREVIADO A UNA SOLA LINEA DE CODIGO) */
+}
+
 }
 @media (width > 1024px) {
     .container {
