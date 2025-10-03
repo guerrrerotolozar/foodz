@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,6 +8,7 @@
     <link rel="stylesheet" href="./css/normalize.css">
     <link rel="stylesheet" href="./css/main.css">
 </head>
+
 <body>
     <header class="header">
         <div class="container header-container">
@@ -21,74 +23,124 @@
                     <li class="menu__item"><a href="#" class="menu__link btn">Menu</a></li>
                     <li class="menu__item"><a href="#" class="menu__link btn">Blog</a></li>
                     <li class="menu__item"><a href="#" class="menu__link btn">Contact</a></li>
-                    <li class="menu__item"><a href="#" class="menu__link btn menu__link--light-green btn--light-green">Order Now</a></li>
+                    <li class="menu__item"><a href="#"
+                            class="menu__link btn menu__link--light-green btn--light-green">Order Now</a></li>
                 </ul>
                 <div class="hamburger-menu">
                     <img src="./images/burger_icon.png" alt="icono de hambuergesa">
                 </div>
-            </nav>                
-        </div>  
+            </nav>
+        </div>
     </header>
- 
-    <main class="main">
-        <section class="questions">
-            <div class="container">
-                <div class="questions-container">
-                        
-                    <div class="question-1">
-                        <h1 calss="hero">You've Got Questions. We've Got Taste.</h1>
-                    <p>Explore your Taste with speacial food in the special place. This text don’t have any meaning</p>
-                    <a href="#" class="btn  btn--light-green">Order Now</a>
-                    </div>
 
-                    <div class="question-2">
-                        <img class="img img-ramen"  src="./images/Bibimbap.png" alt="ramen">
+    <main class="main">
+        <section class="section section-questions questions">
+            <div class="container questions-container">
+                <div class="questions-content">
+
+                    <div class="question-1">
+                        <h1 class="hero">You've Got Questions. We've Got Taste.</h1>
+                        <p>Explore your Taste with speacial food in the special place. This text don’t have any meaning
+                        </p>
+
+                        <div class="box-buttons">
+                            <a href="#" class="btn btn--light-green btn-non-block">Order Now</a>
+                            <a href="#" class="btn btn-explore btn-non-block">Explore Menu</a>
+                        </div>
+                    </div>
+                    <div class="question-2 container-image container-image-ramen">
+
+                        <picture>
+                            <source media="(width < 768px)" srcset="./images/ramen-portrait.png" />
+                            <source media="(width >= 768px)" srcset="./images/ramen-tablet.png" />
+                            <img class="img img-ramen" src="./images/ramen-tablet.png"
+                                alt="Chris standing up holding his daughter Elva" />
+                        </picture>
+
+                        <!-- <img class="img img-ramen"  src="./images/Bibimbap.png" alt="ramen"> -->
                     </div>
                 </div>
-            </div>    
+            </div>
         </section>
-        <sectoin class="offers">
+        <section class="section section-offers offers">
             <div class="container">
                 <h2>Today <span>Special</span> offers</h2>
             </div>
-        </sectoin>
-        <section class="stars">
+        </section>
+        <section class="section section-stars stars">
+
             <div class="container">
-                <h2>19 <span>Michelin</span> Stars Chef</h2>                
+                <h2>19 <span>Michelin</span> Stars Chef</h2>
+                <div class="texto">
+
+                    <div class="container-image container-image-chef">
+                        <img class="img img-chef" src="./images/chef.png" alt="chef">
+                    </div>
+
+                        <div class="container-text container-text-chef">   
+                            <h3 class="container-alain container-alain-superior">
+                                <span>Alain Ducasse – 19 Michelin Stars </span> 
+                            <div class="desktop-link-container">
+                                <a class ="link-container-superior" href="#"><span class="link">View All Restarurant</span><img class="img img-arrow" src="./images/arrow.png" alt="chef"></a>
+                                
+                                
+                            
+                            </div>
+                            </h3>
+
+
+                            <p>Considered by many to be one of the best chefs in the world, he’s built a b siness empire
+                                over the years with 36 restaurants spanning across the globe. He’s also one of only two
+                                chefs to hold 21 Michelin stars throughout his career and the first chef to own
+                                restaurants carrying three Michelin Stars in three cities</p>
+                            <p>In addition to being known for world-class French cuisine, Ducasse is the only chef on
+                                this list who has sent his food into space. In 2015, Ducasse sent meals to astronauts
+                                orbiting Earth aboard the International Space Station, an accomplishment that Ducasse
+                                said he viewed as conquering ‘ the final frontier (of cooking)’.</p>
+                            <h3 class="container-alain container-alain-inferior"> 
+                            <div class="mobile-link-container">
+                            <a class="link-container-inferiror" href="#"><span class="link">View All Restarurant</span><img class="img img-arrow" src="./images/arrow.png" alt="chef"></a>
+                            </div>
+                            </h3>
+                        </div>
+                </div>
+
+
             </div>
-        </section> 
-        <section class="how-keep">
+        </section>
+        <section class="section section-how-keep how-keep">
             <div class="container">
                 <h2>How we keep your meal <span>Delicious</span></h2>
             </div>
-        </section> 
-        <section class="order-now">
+        </section>
+        <section class="section section-order-now order-now">
             <div class="container">
                 <h2>Get the best Taste <span>Now!</span></h2>
             </div>
-        </section> 
+        </section>
     </main>
 
     <footer class="footer">
         <div class="container footer-container">
 
-            <div class="widget widget-left">  
+            <div class="widget widget-left">
                 <div class="footer-logo">
                     <a href="index.html">
                         <img src="./images/logo.png" alt="logo Foodz">
                     </a>
                 </div>
-                <p>Explore your Taste with speacial food in the special place, that will make you happy. I try to write some thing without lorem isum.     
+                <p>Explore your Taste with speacial food in the special place, that will make you happy. I try to write
+                    some thing without lorem isum.
                 </p>
             </div>
 
 
 
-            <div class="widget widget-right">   
+            <div class="widget widget-right">
                 <div class="menu-footer container">
                     <details class="details details-support">
                         <summary>Support</summary>
-                        <ul class="sub menu menu-support">  
+                        <ul class="sub menu menu-support">
                             <li class="menu__item"><a href="#" class="menu__link">Help Center</a></li>
                             <li class="menu__item"><a href="#" class="menu__link">Safety Center</a></li>
                             <li class="menu__item"><a href="#" class="menu__link">Cancellation options</a></li>
@@ -109,14 +161,15 @@
                             <li class="menu__item"><a href="#" class="menu__link">Careers</a></li>
                             <li class="menu__item"><a href="#" class="menu__link">Blog</a></li>
                             <li class="menu__item"><a href="#" class="menu__link">Contact</a></li>
-                    </details>            
+                    </details>
                 </div>
             </div>
-            
-           
-        </div>    
+
+
+        </div>
     </footer>
-    
+
     <script src="./js/main.js"></script>
 </body>
+
 </html>
