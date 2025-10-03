@@ -37,7 +37,7 @@ html {
 
 html,
 body {
-    height: 100%;
+    /* height: 100%; */
     margin: 0;
 }
 
@@ -51,10 +51,9 @@ body {
     font-style: normal;
 }
 
-h1{
+h1 {
     line-height: 1.6;
     margin: 0
-
 }
 
 h1,
@@ -81,6 +80,19 @@ h2 span {
     color: var(--islamic-green);
 }
 
+h3 span {
+    color: var(--islamic-green);
+}
+
+a {
+    text-decoration: none;
+}
+
+p {
+    color: var(--slate-grey);
+    line-height: 1.6;
+}
+
 .header {
     border: 1px dotted blue;
 }
@@ -91,6 +103,7 @@ h2 span {
     margin: 0 auto;
     max-width: 96vw;
     padding: 0 0.8rem;
+    text-align: center;
 }
 
 .container-fluid {
@@ -98,6 +111,10 @@ h2 span {
     box-sizing: border-box;
     margin: 0;
     max-width: 100vw;
+    padding: 0;
+}
+
+.container.questions-container {
     padding: 0;
 }
 
@@ -114,7 +131,7 @@ h2 span {
 
 .menu__link {
     color: #777E90;
-    text-decoration: none;
+    /* text-decoration: none; */
 }
 
 .active {
@@ -122,47 +139,59 @@ h2 span {
 }
 
 .btn {
-    padding: .7rem .9rem;
-    border-radius: .2rem ;
-    
+    padding: 1rem 1rem;
+    border-radius: 1.2rem;
+    display: block;
 }
 
 .btn--light-green {
     background-color: var(--islamic-green);
     color: #FFFFFF;
-    text-decoration: none;
+    /* text-decoration: none; */
     text-transform: uppercase;
-    display: block;
     width: 10rem;
     margin: 0 auto;
 }
 
-.hamburger-menu {
-    display: flex;
+
+.btn-non-block {
+    display: unset;
 }
+
+.btn-non-block.btn-explore {
+    display: none;
+}
+
+.btn-explore {
+    color: var(--islamic-green);
+    /* text-decoration: none; */
+
+}
+
+
 /** main */
 main {
     flex-grow: 1;
 }
 
-.question-1{
+.question-1 {
     text-align: center;
     padding: 0 5rem;
-    gap: 0.8rem;
 }
 
 .question-1 p {
-        color: var(--slate-grey);
-        line-height: 1.6;
-        padding-bottom: 1rem;
+    color: var(--slate-grey);
+    line-height: 1.6;
+    padding-bottom: 1rem;
 }
-.question-2{
+
+.question-2 {
     padding-top: 2rem;
 }
 
 
-.question-2 .img-ramen{
-    width: 100%;;
+.question-2 .img-ramen {
+    width: 100%;
 }
 
 
@@ -204,10 +233,43 @@ details[open] summary {
     margin-bottom: 0.5em;
 }
 
-@media (width > 568px) {
+.container-image-chef,
+.container-text {
+    flex: 1 0 50%;
+}
+
+
+.img-chef {
+    width: 100%;
+    display: none;
+}
+
+.desktop-link-container {
+    display: none;
+    gap: 1rem;
+}
+
+
+
+
+p {
+    display: flex;
+    flex-direction: row;
+    line-height: 1.6;
+}
+
+@media (width > 567px) {
     .container {
         max-width: 54rem;
         padding: 0 1.6rem;
+    }
+
+}
+
+@media (width > 768px) {
+    .container {
+        max-width: 72rem;
+        padding: 0 2.4rem;
     }
 
     .menu-main {
@@ -222,12 +284,35 @@ details[open] summary {
     .hamburger-menu {
         display: none;
     }
-}
 
-@media (width > 768px) {
-    .container {
-        max-width: 72rem;
-        padding: 0 2.4rem;
+    .questions-content {
+        display: flex;
+        align-items: end;
+    }
+
+    .question-1 {
+        text-align: unset;
+        padding: unset;
+    }
+
+    .box-buttons {
+        display: flex;
+        gap: 1rem;
+    }
+
+    .box-buttons .btn--light-green {
+        margin: unset;
+    }
+
+    .btn-non-block.btn-explore {
+        display: flex;
+    }
+
+    .container-image {
+        box-sizing: border-box;
+        margin: 0 auto;
+        max-width: 100vw;
+        padding: 0;
     }
 
     .footer-container {
@@ -246,19 +331,47 @@ details[open] summary {
         flex: 1 0 auto;
         /* <FLEX-GROW> <FLEX-sHRINK> <FLEX-BASIS>  (ABREVIADO A UNA SOLA LINEA DE CODIGO) */
     }
-
 }
 
 @media (width > 1024px) {
-    h1{
-    font-size: 5.6rem;
+    h1 {
+        font-size: 5.6rem;
     }
-    h2{
+
+    h2 {
         font-size: 4.8rem;
     }
+
     .container {
         max-width: 99.2rem;
         padding: 0 3.2rem;
+    }
+
+    .img-chef {
+        display: block;
+    }
+
+    h3.container-alain.container-alain-superior {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .container-text {
+        text-align: left;
+    }
+
+    .desktop-link-container {
+        display: flex;
+        gap: 1rem;
+    }
+
+    .mobile-link-container {
+        display: none;
+    }
+
+    .texto {
+        display: flex;
+        align-items: center;
     }
 }
 
@@ -270,7 +383,7 @@ details[open] summary {
 }
 
 @media (width > 1400px) {
-    h1{
+    h1 {
         font-size: 7.2em;
     }
 
