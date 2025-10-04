@@ -91,6 +91,9 @@ a {
 p {
     color: var(--slate-grey);
     line-height: 1.6;
+    display: flex;
+    flex-direction: row;
+    line-height: 1.6;
 }
 
 .header {
@@ -238,6 +241,10 @@ details[open] summary {
     flex: 1 0 50%;
 }
 
+.container-text {
+    text-align: left;
+}
+
 
 .img-chef {
     width: 100%;
@@ -249,14 +256,47 @@ details[open] summary {
     gap: 1rem;
 }
 
-
-
-
-p {
+.container.container-selection-offers {
     display: flex;
-    flex-direction: row;
-    line-height: 1.6;
+    flex-direction: column;
+    align-items: center;
+    padding: 3rem 42px;
 }
+
+.box-offers {
+    display: flex;
+    flex-direction: column;
+    max-width: 31rem;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    border-radius: 2rem;
+}
+
+.img-offers-bbq {
+    width: 100%;
+}
+
+.container.container-details-title-offers {
+    display: flex;
+        justify-content: space-between;
+}
+
+.container-details-offers a.btn.btn--light-green {
+    margin: unset;
+}
+.container.container-reviews-offers {
+    display: flex;
+    justify-content: flex-start;
+    gap: 1rem;
+}
+.container.container-price-details-offers {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+
+
+
 
 @media (width > 567px) {
     .container {
@@ -356,9 +396,9 @@ p {
         justify-content: space-between;
     }
 
-    .container-text {
+    /* .container-text {
         text-align: left;
-    }
+    } */
 
     .desktop-link-container {
         display: flex;
