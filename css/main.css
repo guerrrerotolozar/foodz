@@ -49,6 +49,7 @@ body {
     font-family: "Poppins", sans-serif;
     font-weight: 400;
     font-style: normal;
+    background-color: var(--lotion);
 }
 
 h1 {
@@ -292,6 +293,17 @@ details[open] summary {
     display: flex;
     justify-content: space-around;
     align-items: center;
+}
+
+.container.container-extra-details-offers {
+    font-size: 1.2rem;
+}
+
+.container-extra-details-offers ul {
+    display: flex
+;
+    flex-direction: column;
+    align-items: flex-start;
 }
 
 
